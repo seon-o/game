@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.game {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 500px;
+  background-image: url(img/background.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  border: 5px solid #f5f5f5;
+}
+
+.game__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.game__field {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.game__button {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  background-image: url(img/play.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.game__button-stop {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  background-image: url(img/stop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.game__timer {
+  display: block;
+  width: 120px;
+  height: 40px;
+  background: rgba(253, 69, 143, 0.9);
+  border-radius: 5px;
+  border: 3px solid #fc5c7d;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+
+.game__score {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #6a82fb;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2;
+  visibility: hidden;
+}
+
+.pop-up {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 500px;
+  height: 220px;
+  transform: translate(-250px);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.1);
+}
+
+.pop-up__refresh {
+  display: block;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  background-color: #fc5c7d;
+  background-image: url(img/reply.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  border-radius: 50%;
+  transform: translateY(-35px);
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.1);
+}
+
+.pop-up__message {
+  display: block;
+  margin: auto;
+  color: #222;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.pop-up__hide {
+  display: none;
+}
